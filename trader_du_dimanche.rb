@@ -48,6 +48,7 @@ def map_elem(arr)
 	min_i = 20
 	dif = 0
 	i = 0
+	entreprise = ""
 	arr.map.select do |k, v|
 		i += 1
 		i2 = 0
@@ -61,9 +62,10 @@ def map_elem(arr)
 					max_dif = v2 - v
 				end			
 			end
+			entreprise = k
 		end
 	end
-	puts "Il faut acheter le jour #{min_i} puis revendre le jour #{max_i} pour un benefice de #{max_dif}"
+	puts "Pour l'entreprise #{entreprise} il faut acheter le jour #{min_i} puis revendre le jour #{max_i} pour un benefice de #{max_dif}"
 end
 
 puts trader_du_lundi
